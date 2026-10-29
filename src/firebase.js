@@ -1,14 +1,17 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyBktUh_Vh5zZ2X61PXLNC5HwEXQgt_kwEs",
+  authDomain: "campus-canteen-system-97918.firebaseapp.com",
+  projectId: "campus-canteen-system-97918",
+  storageBucket: "campus-canteen-system-97918.firebasestorage.app",
+  messagingSenderId: "340023899462",
+  appId: "1:340023899462:web:590c4d3798474cafe5e147"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
