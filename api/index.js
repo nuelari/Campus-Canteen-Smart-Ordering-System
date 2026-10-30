@@ -109,6 +109,6 @@ module.exports = app;
 
 if (process.env.NODE_ENV !== "production") {
   app.listen(PORT, () => {
-    console.log(`Campus Bites server running at http://localhost:${PORT}`);
+    console.log(`Clifford Bites server running at http://localhost:${PORT}`);
   });
 }
