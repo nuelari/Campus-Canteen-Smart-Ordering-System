@@ -10,24 +10,61 @@ app.use(cors());
 app.use(express.json());
 
 const menuItems = [
-  { id: "gobi-noodles", name: "Gobi Noodles", price: 90, veg: true, category: "Noodles" },
-  { id: "chicken-biriyani", name: "Chicken Biriyani", price: 120, veg: false, category: "Biriyani" },
-  { id: "veg-biriyani", name: "Veg Biriyani", price: 65, veg: true, category: "Biriyani" },
-  { id: "gobi-rice", name: "Gobi Fried Rice", price: 90, veg: true, category: "Rice" },
-  { id: "egg-fried-rice", name: "Egg Fried Rice", price: 85, veg: false, category: "Rice" },
-  { id: "chicken-65", name: "Chicken 65", price: 100, veg: false, category: "Snacks" },
-  { id: "gobi-65", name: "Gobi 65", price: 70, veg: true, category: "Snacks" },
-  { id: "masala-dosa", name: "Masala Dosa", price: 55, veg: true, category: "Breakfast" },
-  { id: "sambar-rice", name: "Sambar Rice", price: 50, veg: true, category: "Rice" },
-  { id: "grill-chicken-half", name: "Grill Chicken Half", price: 180, veg: false, category: "Grill" },
-  { id: "egg-noodles", name: "Egg Noodles", price: 100, veg: false, category: "Noodles" },
-  { id: "cold-coffee", name: "Cold Coffee", price: 45, veg: true, category: "Drinks" },
+  { 
+    id: "jollof-chicken", 
+    name: "Jollof Rice with Fried Chicken", 
+    price: 2500, 
+    veg: false, 
+    category: "Rice",
+    image: "https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=600&q=80" 
+  },
+  { 
+    id: "asun-goat", 
+    name: "Asun (Spiced Grilled Goat)", 
+    price: 3000, 
+    veg: false, 
+    category: "Grill",
+    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" 
+  },
+  { 
+    id: "veg-rice", 
+    name: "Fried Rice & Plantain", 
+    price: 2200, 
+    veg: true, 
+    category: "Rice",
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" 
+  },
+  { 
+    id: "stir-fry-indomie", 
+    name: "Special Stir-fry Indomie & Eggs", 
+    price: 1500, 
+    veg: false, 
+    category: "Noodles",
+    image: "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&w=600&q=80" 
+  },
+  { 
+    id: "meat-pie", 
+    name: "Meat Pie & Sausage Roll", 
+    price: 1200, 
+    veg: false, 
+    category: "Snacks",
+    image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=600&q=80" 
+  },
+  { 
+    id: "cold-coffee", 
+    name: "Chilled Zobo Drink / Iced Tea", 
+    price: 800, 
+    veg: true, 
+    category: "Drinks",
+    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" 
+  },
 ];
+
 
 app.get("/api/health", (_req, res) => {
   res.json({
     ok: true,
-    app: "Campus Bites",
+    app: "Clifford Bites",
     persistence: "Firebase Auth + Firestore",
   });
 });
